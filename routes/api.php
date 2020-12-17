@@ -59,3 +59,8 @@ Route::post('/cart/removeAll', [CartController::class, 'removeAllCart'])->name('
 Route::get('/rajaongkir/provinces', [RajaOngkirController::class, 'getProvinces'])->name('customer.rajaongkir.provinces');
 Route::get('/rajaongkir/cities', [RajaOngkirController::class, 'getCities'])->name('customer.rajaongkir.getCities');
 Route::post('/rajaongkir/checkOngkir', [RajaOngkirController::class, 'checkOngkir'])->name('customer.rajaongkir.checkOngkir');
+
+/**
+ * Route Api Slider
+ */
+Route::get('/sliders', [SliderController::class, 'index'])->name('customer.slider.index');
